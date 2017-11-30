@@ -1,4 +1,6 @@
 # bit-bundler-banner
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/MiguelCastillo/bit-bundler-banner.svg)](https://greenkeeper.io/)
 Add a banner to your bundles
 
 # Usage

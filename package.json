@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/MiguelCastillo/bit-bundler-banner#readme",
   "devDependencies": {
-    "eslint": "^3.10.2"
+    "eslint": "^4.12.1"
   }
 }
