@@ -13,15 +13,26 @@ $ npm install --save-dev bit-bundler-banner
 
 ## config
 
+Simple setup passing the string to be added to the bundle to the top.
+
 ``` javascript
 var Bitbundler = require("bit-bundler");
-var banner = require("bit-bundler-banner");
 
 var bitbundler = new Bitbundler({
-  bundler: {
-    plugins: [
-      banner("/*! bit-bundler-banner. Miguel Castillo. Licensed under MIT */")
-    ]
-  }
+  bundler: [
+    ["bit-bundler-banner", "/*! bit-bundler-banner. Miguel Castillo. Licensed under MIT */"]
+  ]
+});
+```
+
+You can altenatively pass a function that returns a string to be used as the banner string.
+
+``` javascript
+var Bitbundler = require("bit-bundler");
+
+var bitbundler = new Bitbundler({
+  bundler: [
+    ["bit-bundler-banner", (bundle) => `/*! bit-bundler-banner ${bundle.name}. Miguel Castillo. Licensed under MIT */`]
+  ]
 });
 ```

@@ -5,8 +5,8 @@ function banner(options) {
     if (!bundle.content) {
       return;
     }
-    
-    const bannerString = options;
+
+    const bannerString = typeof options === "function" ? options(bundle) : option;
     const newContent = bannerString + "\n" + bundle.content;
     const sm = combineSourceMap
       .create()
