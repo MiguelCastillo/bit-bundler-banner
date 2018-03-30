@@ -1,5 +1,5 @@
 {
-  "name": "bit-bundler-banner",
+  "name": "@bit/bundler-banner",
   "version": "1.1.0",
   "description": "Add a banner to your bundles",
   "main": "index.js",
